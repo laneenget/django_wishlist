@@ -4,7 +4,7 @@ from django.core.files.storage import default_storage
 
 # Create your models here.
 
-class CatFace(models.Model):
+class CatFact(models.Model):
     fact = models.CharField(max_length=500)
 
     def __str__(self):
