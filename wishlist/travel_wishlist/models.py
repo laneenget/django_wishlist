@@ -4,6 +4,12 @@ from django.core.files.storage import default_storage
 
 # Create your models here.
 
+class CatFace(models.Model):
+    fact = models.CharField(max_length=500)
+
+    def __str__(self):
+        return fact
+
 """Describes a place table in the database, with a name and visited column.
 Can add constraints, default values to the columns"""
 class Place(models.Model):

@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('travel_wishlist.urls'))
+    path('', include('wishlist.travel_wishlist.urls'))
 ]
 
 from django.conf import settings
